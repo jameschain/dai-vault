@@ -73,7 +73,7 @@ contract Vault is ERC20 {
         pure
         returns (uint256)
     {
-        uint256 daiAmount = lpAmount * exchangeRate;
+        uint256 daiAmount = lpAmount / exchangeRate;
         return daiAmount;
     }
 }
